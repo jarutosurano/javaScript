@@ -1,7 +1,7 @@
 function myFunction() {
   const message = document.getElementById("pawn");
   message.innerHTML = "";
-  let x = document.getElementById("inputText");
+  let x = document.getElementById("inputText").value;
   try {
     if (x.trim() == "") throw "empty";
     if (isNaN(x)) throw "not a number";
